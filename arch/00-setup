@@ -81,8 +81,15 @@
 ./01-15-archivers
 
 # 02 Dotfiles
-# stow
-# rsync
+./02-00-create-dir-structure
+# Rsync OR stow dotfiles
+# Stow---------------------
+./02-01-install-stow
+# Remove OR backup existing dotfiles
+# ./02-02-remove-existng-dotfiles
+./02-03-backup-existing-dotfiles
+./02-04-stow-dotfiles
+# Rsync---------------------
 
 # mc
 # bashrc

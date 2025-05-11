@@ -1,0 +1,41 @@
+# FORMAT
+format = '''
+[┌──\[](bold green)$username$hostname[$time\]-> ](bold green)$directory$git_brunch$git_status$fill$cmd_duration
+[└─](bold green)$character '''
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+[username]
+format = '[$user[@](bold white)]($style)'
+#show_always = true
+style_user = 'bold green'
+style_root = 'bold red'
+aliases = { "k01" = "" }
+
+
+[hostname]
+format = '[$hostname]($style)'
+#ssh_only = false
+style = 'bold red'
+
+
+[time]
+format = '[$time]($style)'
+time_format = '%H:%M'
+#disabled = false
+style = 'bold green'
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style)'
+read_only = ' 󰽅'
+fish_style_pwd_dir_length = 1
+
+[fill]
+symbol = ' '
+
+[cmd_duration]
+min_time = 1
+format = '[<- ](bold green)[$duration]($style)[ ->](bold green) '
+
+

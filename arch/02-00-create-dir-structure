@@ -3,6 +3,7 @@
 directories=(
     "$HOME/.config"
     "$HOME/.config/zsh" 
+    "$HOME/.config/starship"
     )
 
 for dir in "${directories[@]}"; do

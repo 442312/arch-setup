@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ../dots
+stow -t $HOME .
+cd ../arch
+

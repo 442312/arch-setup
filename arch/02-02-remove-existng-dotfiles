@@ -1,0 +1,17 @@
+#!/bin/bash
+
+files=(
+    "$HOME/.zshenv"
+    "$HOME/.config/zsh/.zshrc" 
+    "$HOME/.config/aliases" 
+    "$HOME/.config/starship/starship.toml" 
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    rm "$file"
+    echo "Removed file: $file"
+  else
+    echo "There is no such file: $file"
+  fi
+done
