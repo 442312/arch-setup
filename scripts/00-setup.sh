@@ -65,5 +65,5 @@
 # 01. BASE
 sudo ./01-00-pacman-settings.sh
 sudo ./01-01-pacman-mirrors-multilib.sh
-#sudo /01-02-pacman-mirrors-chaotic.sh
+sudo ./01-02-pacman-mirrors-chaotic.sh
 
