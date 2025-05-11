@@ -67,6 +67,123 @@
 ./01-01-pacman-mirrors-multilib.sh
 # sudo ./01-02-pacman-mirrors-chaotic.sh
 ./01-03-locales.sh
+# man-db
+# htop
+# inxi
+# archives
+# lvm2
+# wget
+# curl
+# rsync
+# ncdu
+# tree 
+# inagemagick
+# mc
+
+# stow
+# bashrc
+# zsh
+# tmux
+# user-dirs
+# profile
+# aliases
+# xresources
+# vim
+# ranger
+
+# fzf
+# exa 
+# cryfs
+
+
+
+# 02 SYSTEM SERVICES
+#----------------------
+# nfs-utils
+# wireguard
+# samba
+# tlp 
+# syncthing
+# ssh
+
+
+
+# APPS
+#----------------------
+# digikam
+# color chooser
+# keepassxc
+# mpv
+# viewnior
+# chromium
+# firefox
+# pdf
+# rapid photo downloader
+# qutebrowser
+# qbittorrent
+# obsidian
+# doublecommander
+# libreoffice
+# darktable
+# gimp
+# inkscape
+# blender
+# freecad
+# homebank
+# calibre
+# telegram
+# vinagre
+# baobab
+# virt-manager libvirt
+# wine
+# local/share/applications
+# kitty
+
+# APEARANCE
+#-----------------------
+# fonts
+# papirus-icons
+
+
+# FLATPAK
+#------------------------
+# flatpak
+# freeplane flatpak
+# vscode flatpak
+
+# DE
+#----------------------
+# gnome
+# kde
+
+# # WM
+#---------------------
+# batsignal
+# rofi
+# polkit
+# sxhkd
+# qtile
+# xorg
+# xorg-xinit
+# picom
+# pulseaudio
+# pamixer
+# nitrogen
+# neofetch
+# i3lock
+# conky
+# tint2
+# dunst
+# scrot
+# xss-lock
+
+# AUR
+#------------------------
+# yay
+# light
+# jumpapp
+# xidlehook
+
 
 # 10. END
 echo -e "Arch Setup Done"

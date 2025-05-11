@@ -20,4 +20,4 @@ LC_MEASUREMENT="ru_RU.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
 #================================
 "
-echo -e " $text" | sudo tee /etc/locale.conf
+echo -e " $text" | sudo tee /etc/locale.conf > /dev/null
