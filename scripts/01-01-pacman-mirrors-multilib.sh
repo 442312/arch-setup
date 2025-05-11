@@ -8,5 +8,5 @@ text="
 Include = /etc/pacman.d/mirrorlist
 #================================
 "
-sudo echo -e " $text"  >> /etc/pacman.conf
+sudo bash -c "echo -e " $text"  >> /etc/pacman.conf"
 sudo pacman -Syu --noconfirm

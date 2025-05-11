@@ -63,8 +63,8 @@
 # Also review and edit scripts themeselves.
 
 # 01. BASE
-./01-00-pacman-settings.sh &&
-./01-01-pacman-mirrors-multilib.sh &&
+./01-00-pacman-settings.sh
+./01-01-pacman-mirrors-multilib.sh
 # sudo ./01-02-pacman-mirrors-chaotic.sh &&
 
 # 10. END
