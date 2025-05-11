@@ -9,4 +9,4 @@ Include = /etc/pacman.d/mirrorlist
 #================================
 "
 echo -e " $text"  >> /etc/pacman.conf
-pacman -Syyu --noconfirm
+pacman -Syu --noconfirm
