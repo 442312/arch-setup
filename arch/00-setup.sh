@@ -79,8 +79,13 @@
 # tree 
 # inagemagick
 # mc
+# ranger
 
+# 02 Dotfiles
 # stow
+# rsync
+
+# mc
 # bashrc
 # zsh
 # tmux
@@ -89,7 +94,7 @@
 # aliases
 # xresources
 # vim
-# ranger
+
 
 # fzf
 # exa 
@@ -97,7 +102,8 @@
 
 
 
-# 02 SYSTEM SERVICES
+# 03
+ SYSTEM SERVICES
 #----------------------
 # nfs-utils
 # wireguard
