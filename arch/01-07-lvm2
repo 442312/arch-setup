@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo pacman -S lvm2 --noconfirm
+

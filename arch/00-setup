@@ -54,7 +54,7 @@
 # 8. Cd to dotfiles/scripts and run this setup script
 # ------------
 #     cd arch-setup/scripts
-#     .00-setup.sh
+#     .00-setup
 # ------------
 
 # AUTOMATIC OPERATIONS
@@ -63,23 +63,23 @@
 # Also review and edit scripts themeselves.
 
 # 01. BASE
-./01-00-pacman-settings.sh
-./01-01-pacman-mirrors-multilib.sh
-# sudo ./01-02-pacman-mirrors-chaotic.sh
-./01-03-locales.sh
-# man-db
-# htop
-# inxi
-# archives
-# lvm2
-# wget
-# curl
-# rsync
+./01-00-pacman-settings
+./01-01-pacman-mirrors-multilib
+# sudo ./01-02-pacman-mirrors-chaotic
+./01-03-locales
+./01-04-man-db
+./01-05-htop
+./01-06-inxi
+./01-07-lvm2
+./01-08-wget
+./01-09-curl
+./01-10-rsync
 # ncdu
 # tree 
 # inagemagick
 # mc
 # ranger
+# archives
 
 # 02 Dotfiles
 # stow
