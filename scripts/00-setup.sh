@@ -47,13 +47,13 @@
 
 # 7. Make all script executable:
 # ------------
-#     chmod +x dotfiles/scripts/*
+#     chmod +x arch-setup/scripts/*
 #  -----------
 
 
 # 8. Cd to dotfiles/scripts and run this setup script
 # ------------
-#     cd dotfiles/scripts
+#     cd arch-setup/scripts
 #     .00-setup.sh
 # ------------
 
@@ -63,7 +63,7 @@
 # Also review and edit scripts themeselves.
 
 # 01. BASE
-sudo ./01-00-pacman-settings.sh
-sudo ./01-01-pacman-mirrors-multilib.sh
-sudo ./01-02-pacman-mirrors-chaotic.sh
+./01-00-pacman-settings.sh &&
+./01-01-pacman-mirrors-multilib.sh &&
+# sudo ./01-02-pacman-mirrors-chaotic.sh &&
 

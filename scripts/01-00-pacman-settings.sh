@@ -9,4 +9,4 @@ Color
 ParallelDownloads = 10
 #================================
 "
-echo -e " $text"  >> /etc/pacman.conf
+sudo echo -e " $text"  >> /etc/pacman.conf
