@@ -66,6 +66,7 @@
 ./01-00-pacman-settings.sh
 ./01-01-pacman-mirrors-multilib.sh
 # sudo ./01-02-pacman-mirrors-chaotic.sh
+./01-03-locales.sh
 
 # 10. END
 echo -e "Arch Setup Done"
