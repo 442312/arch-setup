@@ -12,5 +12,5 @@ text="
 Include = /etc/pacman.d/chaotic-mirrorlist
 #================================
 "
-sudo bash -c "echo -e " $text"  >> /etc/pacman.conf"
+echo -e " $text" | sudo tee -a /etc/pacman.conf"
 sudo pacman -Syu --noconfirm
