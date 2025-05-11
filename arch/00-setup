@@ -62,7 +62,7 @@
 # View and comment/uncomment needed parts.
 # Also review and edit scripts themeselves.
 
-# 01. BASE
+# 01. BASE-1
 ./01-00-pacman-settings
 ./01-01-pacman-mirrors-multilib
 #./01-02-pacman-mirrors-chaotic
@@ -80,7 +80,7 @@
 ./01-14-ranger
 ./01-15-archivers
 
-# 02 Dotfiles
+# 02 DOTFILES
 ./02-00-create-dir-structure
 # Rsync OR stow dotfiles
 # Stow---------------------
@@ -91,13 +91,14 @@
 ./02-04-stow-dotfiles
 # Rsync---------------------
 
+
+# 03 BASE-2
+./03-00-zsh
 # mc
 # bashrc
 # zsh
 # tmux
 # user-dirs
-# profile
-# aliases
 # xresources
 # vim
 
