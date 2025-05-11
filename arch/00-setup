@@ -65,7 +65,7 @@
 # 01. BASE
 ./01-00-pacman-settings
 ./01-01-pacman-mirrors-multilib
-# sudo ./01-02-pacman-mirrors-chaotic
+#./01-02-pacman-mirrors-chaotic
 ./01-03-locales
 ./01-04-man-db
 ./01-05-htop
@@ -74,11 +74,11 @@
 ./01-08-wget
 ./01-09-ncdu
 ./01-10-rsync
-# tree 
-# inagemagick
-# mc
-# ranger
-# archives
+./01-11-tree 
+./01-12-inagemagick
+./01-13-mc
+./01-14-ranger
+./01-15-archivers
 
 # 02 Dotfiles
 # stow
@@ -101,8 +101,7 @@
 
 
 
-# 03
- SYSTEM SERVICES
+# 03 SYSTEM SERVICES
 #----------------------
 # nfs-utils
 # wireguard

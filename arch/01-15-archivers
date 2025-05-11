@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo pacman -S 7zip unzip unrar arj unarchiver --noconfirm
+
