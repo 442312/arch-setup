@@ -67,3 +67,6 @@
 ./01-01-pacman-mirrors-multilib.sh &&
 # sudo ./01-02-pacman-mirrors-chaotic.sh &&
 
+# 10. END
+echo -e "Arch Setup Done"
+
