@@ -72,9 +72,8 @@
 ./01-06-inxi
 ./01-07-lvm2
 ./01-08-wget
-./01-09-curl
+./01-09-ncdu
 ./01-10-rsync
-# ncdu
 # tree 
 # inagemagick
 # mc
