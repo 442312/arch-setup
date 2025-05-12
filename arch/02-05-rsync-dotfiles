@@ -1,0 +1,16 @@
+#!/bin/bash
+source="../dots"
+
+destination="$HOME"
+
+
+files=(
+    ".zshenv"
+    ".config/zsh/.zshrc" 
+    ".config/aliases" 
+    ".config/starship/starship.toml" 
+    )
+
+for file in "${files[@]}"; do
+     rsync -avz $source/$file $destination/$file
+done
