@@ -1,6 +1,7 @@
 #!/bin/bash
 
 files=(
+    "$HOME/.bashrc"
     "$HOME/.zshenv"
     "$HOME/.config/zsh/.zshrc" 
     "$HOME/.config/aliases" 

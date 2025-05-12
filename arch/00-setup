@@ -95,9 +95,9 @@
 
 
 # 03 BASE-2
+source $HOME/.bashrc
 ./03-00-zsh
 # mc
-# bashrc
 # zsh
 # tmux
 # user-dirs
