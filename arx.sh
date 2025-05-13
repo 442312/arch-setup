@@ -63,40 +63,40 @@
 # Also review and edit scripts themeselves.
 
 # 01. BASE-1
-./01-00-pacman-settings
-./01-01-pacman-mirrors-multilib
-#./01-02-pacman-mirrors-chaotic
-./01-03-locales
-./01-04-man-db
-./01-05-htop
-./01-06-inxi
-./01-07-lvm2
-./01-08-wget
-./01-09-ncdu
-./01-10-rsync
-./01-11-tree 
-./01-12-inagemagick
-./01-13-mc
-./01-14-ranger
-./01-15-archivers
+./scripts/01-00-pacman-settings
+./scripts/01-01-pacman-mirrors-multilib
+#./scripts/01-02-pacman-mirrors-chaotic
+./scripts/01-03-locales
+./scripts/01-04-man-db
+./scripts/01-05-htop
+./scripts/01-06-inxi
+./scripts/01-07-lvm2
+./scripts/01-08-wget
+./scripts/01-09-ncdu
+./scripts/01-10-rsync
+./scripts/01-11-tree 
+./scripts/01-12-inagemagick
+./scripts/01-13-mc
+./scripts/01-14-ranger
+./scripts/01-15-archivers
 
 # 02 DOTFILES
-./02-00-create-dir-structure
+./scripts/02-00-create-dir-structure
 # Rsync OR stow dotfiles
 # Stow---------------------
-# ./02-01-install-stow
+# ./scripts/02-01-install-stow
 # Remove OR backup existing dotfiles
-./02-02-remove-existng-dotfiles
-# ./02-03-backup-existing-dotfiles
-# ./02-04-stow-dotfiles
+./scripts/02-02-remove-existng-dotfiles
+# ./scripts/02-03-backup-existing-dotfiles
+# ./scripts/02-04-stow-dotfiles
 # Rsync---------------------
-./02-05-rsync-dotfiles
+./scripts/02-05-rsync-dotfiles
 
 
 
 # 03 BASE-2
 source $HOME/.bashrc
-./03-00-zsh
+./scripts/03-00-zsh
 # mc
 # zsh
 # tmux
