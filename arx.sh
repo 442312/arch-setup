@@ -100,10 +100,10 @@ export arxdotdir="$(pwd)/dots"
 # 02. SYSTEM SERVICES
 #----------------------
 ./scripts/02-00-nfs
-./scripts/02-01-wireguard
-./scripts/02-02-samba
-./scripts/02-03-tlp 
-./scripts/02-04-syncthing
+# ./scripts/02-01-wireguard
+# ./scripts/02-02-samba
+# ./scripts/02-03-tlp 
+# ./scripts/02-04-syncthing
 ./scripts/02-05-ssh
 
 
