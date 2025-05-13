@@ -1,0 +1,30 @@
+#!/bin/bash
+
+files=(
+    ".config/user-dirs.dirs"
+    ".config/user-dirs.locale"
+    )
+    
+# 3. Backup existing files
+#--------------------------
+for file in "${files[@]}"; do
+    if [  -f "$HOME/$file"  ]; then
+    cp "$HOME/$file" "$HOME/$file.arxbak" 
+    fi
+done
+
+# 3. Remove existing files
+#--------------------------
+for file in "${files[@]}"; do
+    if [  -f "$HOME/$file"  ]; then
+    rm "$HOME/$file"
+    fi
+done
+
+# 5. Restore (link) files from dofiles
+#--------------------------
+for file in "${files[@]}"; do
+    if [  -f "$HOME/$file"  ]; then
+    ln -s "$arxdotdir/$file" "$HOME/$file"
+    fi
+done

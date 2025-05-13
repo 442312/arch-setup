@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# 1. Backup existing Xresources
+#------------------------------
+if [  -f "$HOME/.Xresources"  ]; then
+    cp "$HOME/.Xresources" "$HOME/.Xresources.arxbak" 
+fi
+
+
+# 2. Remove existing Xresources
+#------------------------------
+if [  -f "$HOME/.Xresources"  ]; then
+    rm "$HOME/.Xresources"
+fi
+
+# 3. Restore (link) Xresources from dofiles
+#------------------------------------------------
+ln -s "$arxdotdir/.Xresources" "$HOME/.Xresources"
+

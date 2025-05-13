@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# 3. Backup existing profile
+# 1. Backup existing profile
 #------------------------------
 if [  -f "$HOME/.profile"  ]; then
     cp "$HOME/.profile" "$HOME/.profile.arxbak" 
 fi
 
 
-# 4. Remove existing profile
+# 2. Remove existing profile
 #------------------------------
 if [  -f "$HOME/.profile"  ]; then
     rm "$HOME/.profile"
 fi
 
-# 5. Restore (link) profile from dofiles
+# 3. Restore (link) profile from dofiles
 #------------------------------------------------
 ln -s "$arxdotdir/.profile" "$HOME/.profile"
 

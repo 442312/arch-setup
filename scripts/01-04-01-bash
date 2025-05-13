@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# 1. Backup existing bashrc
+#------------------------------
+if [  -f "$HOME/.bashrc"  ]; then
+    cp "$HOME/.bashrc" "$HOME/.bashrc.arxbak" 
+fi
+
+
+# 2. Remove existing bashrc
+#------------------------------
+if [  -f "$HOME/.bashrc"  ]; then
+    rm "$HOME/.bashrc"
+fi
+
+# 3. Restore (link) bashrc from dofiles
+#------------------------------------------------
+ln -s "$arxdotdir/.bashrc" "$HOME/.bashrc"
+

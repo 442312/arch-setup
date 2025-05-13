@@ -72,8 +72,11 @@ export arxdotdir="$(pwd)/dots"
 #./scripts/01-02-pacman-mirrors-chaotic
 ./scripts/01-03-locales
 ./scripts/01-04-00-create-dir-structure
-./scripts/01-04-01-shell-aliases
-./scripts/01-04-02-profile
+./scripts/01-04-01-bash
+./scripts/01-04-02-shell-aliases
+./scripts/01-04-03-profile
+./scripts/01-04-04-xresources
+./scripts/01-04-05-xdg-user-dirs
 ./scripts/01-04-man-db
 ./scripts/01-05-htop
 ./scripts/01-06-inxi
@@ -87,15 +90,10 @@ export arxdotdir="$(pwd)/dots"
 ./scripts/01-14-ranger
 ./scripts/01-15-archivers
 ./scripts/01-16-zsh
-# mc
-# bash
-# aliases
-# tmux
 # user-dirs
 # xresources
 # vim
-
-
+# tmux
 # fzf
 # exa 
 # cryfs
