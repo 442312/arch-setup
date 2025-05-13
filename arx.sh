@@ -66,7 +66,8 @@ export arxdotdir="$(pwd)/dots"
 # View and comment/uncomment needed parts.
 # Also review and edit scripts themeselves.
 
-# 01. BASE-1
+# 01. BASE
+#---------
 ./scripts/01-00-pacman-settings
 ./scripts/01-01-pacman-mirrors-multilib
 #./scripts/01-02-pacman-mirrors-chaotic
@@ -90,24 +91,20 @@ export arxdotdir="$(pwd)/dots"
 ./scripts/01-14-ranger
 ./scripts/01-15-archivers
 ./scripts/01-16-zsh
-# user-dirs
-# xresources
 # vim
 # tmux
 # fzf
 # exa 
 # cryfs
 
-
-
-# 03 SYSTEM SERVICES
+# 02. SYSTEM SERVICES
 #----------------------
-# nfs-utils
-# wireguard
-# samba
-# tlp 
-# syncthing
-# ssh
+./scripts/02-00-nfs
+./scripts/02-01-wireguard
+./scripts/02-02-samba
+./scripts/02-03-tlp 
+./scripts/02-04-syncthing
+./scripts/02-05-ssh
 
 
 
