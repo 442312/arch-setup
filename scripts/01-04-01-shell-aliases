@@ -15,5 +15,5 @@ fi
 
 # 5. Restore (link) aliases from dofiles
 #------------------------------------------------
-ln -s "$(pwd)/dots/.config/aliases.txt" "$HOME/.config/aliases.txt"
+ln -s "$arxdotdir/.config/aliases.txt" "$HOME/"
 

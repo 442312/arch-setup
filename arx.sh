@@ -57,6 +57,10 @@
 #     .00-setup
 # ------------
 
+# VARIABLES
+# Dotfiles folder location. Change it if you whant to use your own path
+export arxdotdir="$(pwd)/dots"
+
 # AUTOMATIC OPERATIONS
 #
 # View and comment/uncomment needed parts.
@@ -69,6 +73,7 @@
 ./scripts/01-03-locales
 ./scripts/01-04-00-create-dir-structure
 ./scripts/01-04-01-shell-aliases
+./scripts/01-04-02-profile
 ./scripts/01-04-man-db
 ./scripts/01-05-htop
 ./scripts/01-06-inxi

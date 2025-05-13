@@ -60,6 +60,6 @@ files=(
     )
 
 for file in "${files[@]}"; do
-      ln -s "$(pwd)/dots/$file" "$HOME/$file"
+      ln -s "$arxdotdir/$file" "$HOME/$file"
 done
 
