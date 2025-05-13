@@ -22,7 +22,7 @@ eval "$(starship init zsh)"
 
 ### ---- settings-------------------------------------------
 # Source aliaces
-source ~/.config/aliases
+source ~/.config/aliases.txt
 
 # Source profile
 source ~/.profile

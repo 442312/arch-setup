@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# 3. Backup existing aliases
+#------------------------------
+if [  -f "$HOME/.config/aliases.txt"  ]; then
+    cp "$HOME/.config/aliases.txt" "$HOME/.config/aliases.txt.arxbak" 
+fi
+
+
+# 4. Remove existing aliases
+#------------------------------
+if [  -f "$HOME/.config/aliases.txt"  ]; then
+    rm "$HOME/.config/aliases.txt"
+fi
+
+# 5. Restore (link) aliases from dofiles
+#------------------------------------------------
+ln -s "$(pwd)/dots/.config/aliases.txt" "$HOME/.config/aliases.txt"
+
