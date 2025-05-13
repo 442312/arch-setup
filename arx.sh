@@ -67,6 +67,7 @@
 ./scripts/01-01-pacman-mirrors-multilib
 #./scripts/01-02-pacman-mirrors-chaotic
 ./scripts/01-03-locales
+./scripts/01-04-00-create-dir-structure
 ./scripts/01-04-man-db
 ./scripts/01-05-htop
 ./scripts/01-06-inxi
@@ -79,26 +80,10 @@
 ./scripts/01-13-mc
 ./scripts/01-14-ranger
 ./scripts/01-15-archivers
-
-# 02 DOTFILES
-./scripts/02-00-create-dir-structure
-# Rsync OR stow dotfiles
-# Stow---------------------
-# ./scripts/02-01-install-stow
-# Remove OR backup existing dotfiles
-./scripts/02-02-remove-existng-dotfiles
-# ./scripts/02-03-backup-existing-dotfiles
-# ./scripts/02-04-stow-dotfiles
-# Rsync---------------------
-./scripts/02-05-rsync-dotfiles
-
-
-
-# 03 BASE-2
-source $HOME/.bashrc
-./scripts/03-00-zsh
+./scripts/01-16-zsh
 # mc
-# zsh
+# bash
+# aliases
 # tmux
 # user-dirs
 # xresources
@@ -200,5 +185,6 @@ source $HOME/.bashrc
 
 
 # 10. END
+# remove backup files arxbak
 echo -e "Arch Setup Done"
 

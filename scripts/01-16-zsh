@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# 1. Install zsh
+#---------------
+sudo pacman -S zsh --noconfirm
+
+# 2. Install zsh-plugins
+#-----------------------
+sudo pacman -S zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting starship --noconfirm
+
+# 3. Create needed directories
+#-----------------------------
+directories=(
+    "$HOME/.config/zsh"
+    "$HOME/.config/starship"
+    )
+
+for dir in "${directories[@]}"; do
+  if [ ! -d "$dir" ]; then
+    mkdir -p "$dir"
+  fi
+done
+
+# 3. Backup existing zsh config
+#------------------------------
+files=(
+    "$HOME/.zshenv"
+    "$HOME/.config/zsh/.zshrc" 
+    "$HOME/.zshrc"
+    "$HOME/.config/starship/starship.toml"  
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    cp "$file" "$file".arxbak
+  fi
+done
+
+# 4. Remove existing zsh config
+#------------------------------
+files=(
+    "$HOME/.zshenv"
+    "$HOME/.config/zsh/.zshrc" 
+    "$HOME/.zshrc"
+    "$HOME/.config/starship/starship.toml" 
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    rm "$file"
+  fi
+done
+
+# 5. Restore (link) zsh config files from dofiles
+#------------------------------------------------
+files=(
+    ".zshenv"
+    ".config/zsh/.zshrc"
+    ".config/starship/starship.toml" 
+    )
+
+for file in "${files[@]}"; do
+      ln -s "$(pwd)/dots/$file" "$HOME/$file"
+done
+

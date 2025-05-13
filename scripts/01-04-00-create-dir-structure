@@ -2,15 +2,12 @@
 
 directories=(
     "$HOME/.config"
-    "$HOME/.config/zsh" 
-    "$HOME/.config/starship"
+    "$HOME/.local/share" 
+    "$HOME/.local/state"
     )
 
 for dir in "${directories[@]}"; do
   if [ ! -d "$dir" ]; then
     mkdir -p "$dir"
-    echo "Created directory: $dir"
-  else
-    echo "Directory already exists: $dir"
   fi
 done
