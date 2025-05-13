@@ -15,5 +15,5 @@ fi
 
 # 5. Restore (link) profile from dofiles
 #------------------------------------------------
-ln -s "$arxdotdir/dots/.profile" "$HOME/.profile"
+ln -s "$arxdotdir/.profile" "$HOME/.profile"
 
