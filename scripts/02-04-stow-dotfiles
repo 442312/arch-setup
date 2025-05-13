@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../dots
+cd ./dots
 stow -t $HOME .
-cd ../scripts
+cd ..
 

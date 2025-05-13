@@ -1,5 +1,5 @@
 #!/bin/bash
-source="../dots"
+source="./dots"
 
 destination="$HOME"
 
