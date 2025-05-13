@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo pacman -S wireguard-tools --noconfirm
-# sudo systemctl enable wg-quick@wg0.service
+sudo systemctl enable wg-quick@wg0.service
