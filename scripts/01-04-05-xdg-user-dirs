@@ -4,7 +4,7 @@ files=(
     ".config/user-dirs.dirs"
     ".config/user-dirs.locale"
     )
-    
+
 # 3. Backup existing files
 #--------------------------
 for file in "${files[@]}"; do
@@ -24,7 +24,5 @@ done
 # 5. Restore (link) files from dofiles
 #--------------------------
 for file in "${files[@]}"; do
-    if [  -f "$HOME/$file"  ]; then
     ln -s "$arxdotdir/$file" "$HOME/$file"
-    fi
 done
