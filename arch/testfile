@@ -1,15 +1,3 @@
 #!/bin/bash
-
-directories=(
-    "$HOME/.config"
-    "$HOME/.config/zsh" 
-    )
-
-for dir in "${directories[@]}"; do
-  if [ ! -d "$dir" ]; then
-    mkdir -p "$dir"
-    echo "Created directory: $dir"
-  else
-    echo "Directory already exists: $dir"
-  fi
-done
+export rrr="Andrey"
+./testfile1
