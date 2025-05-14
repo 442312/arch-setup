@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo pacman -S tlp --noconfirm
-sudo systemctl enable tlp.service
+sudo systemctl enable --now tlp.service

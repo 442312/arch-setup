@@ -1,5 +1,6 @@
 #!/bin/bash
 
 sudo pacman -S samba --noconfirm
-sudo systemctl enable smb.service
-sudo systemctl enable nmb.service
+sudo touch /etc/samba/smb.conf
+sudo systemctl enable --now smb.service
+sudo systemctl enable --now nmb.service
