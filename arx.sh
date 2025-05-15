@@ -116,13 +116,13 @@ export arxdotdir="$(pwd)/dots"
 
 # 03. WM
 #---------------------
-./03-00-xorg
-./03-01-power-management
-./03-02-polkit
-./03-03-audio
-./03-04-rofi
-./03-05-sxhkd
-./03-06-conky
+./scripts/03-00-xorg
+./scripts/03-01-power-management
+./scripts/03-02-polkit
+./scripts/03-03-audio
+./scripts/03-04-rofi
+./scripts/03-05-sxhkd
+./scripts/03-06-conky
 # qtile
 # picom
 # nitrogen
