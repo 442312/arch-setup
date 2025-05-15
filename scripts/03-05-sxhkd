@@ -8,7 +8,7 @@ sudo pacman -S sxhkd --noconfirm
 # 2. Create needed directories
 #-----------------------------
   if [ ! -d "$HOME/.config/sxhkd" ]; then
-    mkdir -p "$dir"
+    mkdir -p "$HOME/.config/sxhkd"
   fi
 
 # 3. Backup existing sxhkd config

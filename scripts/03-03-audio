@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S pavucontrol--noconfirm
+sudo pacman -S pavucontrol --noconfirm
 # sudo pacman -S pavucontrol-qt--noconfirm
 sudo pacman -S pamixer --noconfirm
 sudo pacman -S pulseaudio-equalizer-ladspa --noconfirm

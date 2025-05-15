@@ -7,7 +7,7 @@ sudo pacman -S rofi --noconfirm
 # 2. Create needed directories
 #-----------------------------
   if [ ! -d "$HOME/.config/rofi" ]; then
-    mkdir -p "$dir"
+    mkdir -p "$HOME/.config/rofi"
   fi
 
 # 3. Backup existing rofi config
