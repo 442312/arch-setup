@@ -43,7 +43,7 @@ target_files1=(
     )
 
 for file in "${target_files1[@]}"; do
-   if [  -f "$file" ]; then   
+   if [  -f "$arxdotdir/.config/conky/$file" ]; then   
       ln -s "$arxdotdir/.config/conky/$file" "$HOME/.config/conky/$file"
    fi   
 done
@@ -53,7 +53,7 @@ target_files2=(
     )
 
 for file in "${target_files2[@]}"; do
-   if [  -f "$file" ]; then   
+   if [  -f "$arxdotdir/.config/conky/scripts/$file" ]; then   
       ln -s "$arxdotdir/.config/conky/scripts/$file" "$HOME/.config/conky/scripts/$file"
    fi   
 done
