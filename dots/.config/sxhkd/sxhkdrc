@@ -1,0 +1,90 @@
+# 0 KP_Insert terminal
+# точка KP_Delete
+# Enter KP_Enter
+KP_Enter
+	rofi -show-icons -show drun
+# 1 KP_End
+KP_End
+	jumpapp -t just-kitty kitty -T just-kitty
+
+shift+KP_End
+	kitty -T just-kitty
+
+super+KP_End
+	kitty -T just-kitty
+# 2 KP_Down
+KP_Down
+	jumpapp dolphin
+# 3 KP_Next
+KP_Next
+	jumpapp doublecmd
+# 4 KP_Left
+KP_Left
+	jumpapp obsidian
+# 5 KP_Begin
+KP_Begin
+	jumpapp chromium
+# 6 KP_Right
+KP_Right
+	jumpapp kate
+# 7 KP_Home
+KP_Home
+	jumpapp -c "mpv" mpv-run
+# 8 KP_Up
+KP_Up
+	jumpapp -fc "code" flatpak run com.visualstudio.code  
+# 9 KP_Prior
+# + KP_Add
+# - KP_Substract
+# * KP_Multiply
+# / KP_Divide
+
+#  Choice menu
+#super+z
+#	kchoice-qtile
+
+# Toggle presentation mode
+super+p
+	xihook-present
+
+#Volume up
+XF86AudioRaiseVolume
+	volume up
+
+#Volume Down
+XF86AudioLowerVolume
+	volume down
+
+#Volume Mute
+XF86AudioMute
+	volume mute
+
+#Brightness Up
+XF86MonBrightnessUp
+	light -A 10
+
+#Brightness Down
+XF86MonBrightnessDown
+	light -U 10
+
+#Applications
+super+c
+	jumpapp -c libreoffice-calc localc
+
+super+m
+	jumpapp virt-manager
+
+super+n
+	jumpapp inkscape
+
+super+h
+	jumpapp homebank
+
+super+i
+	jumpapp viewnior
+
+super+g
+	jumpapp gimp
+
+super+a
+	jumpapp -fc "org-knopflerfish-framework-BundleThread" flatpak run org.freeplane.App

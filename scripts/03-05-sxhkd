@@ -1,0 +1,29 @@
+#!/bin/bash
+
+
+# 1. Install sxhkd
+#-----------------------------
+sudo pacman -S sxhkd --noconfirm
+
+# 2. Create needed directories
+#-----------------------------
+  if [ ! -d "$HOME/.config/sxhkd" ]; then
+    mkdir -p "$dir"
+  fi
+
+# 3. Backup existing sxhkd config
+#------------------------------
+  if [  -f "$HOME/.config/sxhkd/sxhkdrc" ]; then
+    cp $HOME/.config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.arxbak
+  fi
+
+# 4. Remove existing sxhkd config
+#------------------------------
+  if [  -f "$HOME/.config/sxhkd/sxhkdrc" ]; then
+    rm $HOME/.config/sxhkd/sxhkdrc
+  fi
+
+# 5. Restore (link) sxhkd config file from dofiles
+#------------------------------------------------
+ln -s "$arxdotdir/.config/sxhkd/sxhkdrc" "$HOME/.config/sxhkd/sxhkdrc"
+

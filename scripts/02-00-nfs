@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo pacman -S nfs-utils --noconfirm
-sudo systemctl enable --now nfs-server.service
+# sudo systemctl enable --now nfs-server.service

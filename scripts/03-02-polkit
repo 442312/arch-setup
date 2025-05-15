@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# sudo pacman -S lxsession --noconfirm
+# sudo pacman -S polkit-kde-agent --noconfirm
+sudo pacman -S polkit-gnome --noconfirm
+# sudo pacman -S mate-polkit --noconfirm
+

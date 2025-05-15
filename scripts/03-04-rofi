@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# 1. Install rofi
+#-----------------------------
+sudo pacman -S rofi --noconfirm
+
+# 2. Create needed directories
+#-----------------------------
+  if [ ! -d "$HOME/.config/rofi" ]; then
+    mkdir -p "$dir"
+  fi
+
+# 3. Backup existing rofi config
+#------------------------------
+  if [  -f "$HOME/.config/rofi/config.rasi" ]; then
+    cp $HOME/.config/rofi/config.rasi $HOME/.config/rofi/config.rasi.arxbak
+  fi
+
+# 4. Remove existing rofi config
+#------------------------------
+  if [  -f "$HOME/.config/rofi/config.rasi" ]; then
+    rm $HOME/.config/rofi/config.rasi
+  fi
+
+# 5. Restore (link) rofi config file from dofiles
+#------------------------------------------------
+ln -s "$arxdotdir/.config/rofi/config.rasi" "$HOME/.config/rofi/config.rasi"
+
+
