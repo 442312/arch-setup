@@ -5,6 +5,8 @@ sudo pacman -S gnome --noconfirm
 sudo pacman -S gnome-terminal --noconfirm
 sudo pacman -S gnome-tweaks --noconfirm
 sudo pacman -S dconf-editor --noconfirm
+# 7. Restore gsettings from dconf dump
+dconf load / < $arxdotdir/.config/arx-gnome/dump.dconf
 # 3. Install pipx
 sudo pacman -S python-pipx --noconfirm
 # 4. Install gnome-extensions-cli with pipx
@@ -72,7 +74,6 @@ for file in "${files[@]}"; do
 done
 # - Link envvars.conf with .profile
 ln -s "$arxdotdir/.profile" "$HOME/.config/evironment.d/envvars.conf"
-# 7. Restore gsettings from dconf dump
-dconf load / < $arxdotdir/.config/arx-gnome/dump.dconf
+
 # 8. Enable GDM
 sudo systemctl enable gdm.service
