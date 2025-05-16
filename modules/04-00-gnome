@@ -73,6 +73,6 @@ done
 # - Link envvars.conf with .profile
 ln -s "$arxdotdir/.profile" "$HOME/.config/evironment.d/envvars.conf"
 # 7. Restore gsettings from dconf dump
-dconf load < $arxdotdir/.config/arx-gnome/dump.dconf
+dconf load / < $arxdotdir/.config/arx-gnome/dump.dconf
 # 8. Enable GDM
 sudo systemctl enable gdm.service
