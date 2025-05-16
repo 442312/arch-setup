@@ -11,15 +11,7 @@ dconf load / < $arxdotdir/.config/arx-gnome/dump.dconf
 sudo pacman -S python-pipx --noconfirm
 # 4. Install gnome-extensions-cli with pipx
 pipx install gnome-extensions-cli --system-site-packages
-# 5. Install gnome shell extensions
-# - Install Caffeine extension
-~/.local/bin/gext -F install 517
-# - Install Just Perfiection extension
-~/.local/bin/gext -F install 3843
-# - Install Transparent Top Bar extension
-~/.local/bin/gext -F install 3960
-# - Install Run or Rise extension
-~/.local/bin/gext -F install 1336
+
 # 6. Link gnome related files
 # - Create needed directories
 directories=(
@@ -74,6 +66,14 @@ for file in "${files[@]}"; do
 done
 # - Link envvars.conf with .profile
 ln -s "$arxdotdir/.profile" "$HOME/.config/evironment.d/envvars.conf"
-
+# 5. Install gnome shell extensions
+# - Install Caffeine extension
+~/.local/bin/gext -F install 517
+# - Install Just Perfiection extension
+~/.local/bin/gext -F install 3843
+# - Install Transparent Top Bar extension
+~/.local/bin/gext -F install 3960
+# - Install Run or Rise extension
+~/.local/bin/gext -F install 1336
 # 8. Enable GDM
 sudo systemctl enable gdm.service
