@@ -6,7 +6,7 @@ sudo pacman -S gnome-terminal --noconfirm
 sudo pacman -S gnome-tweaks --noconfirm
 sudo pacman -S dconf-editor --noconfirm
 # 3. Install pipx
-sudo pacman -S pipx --noconfirm
+sudo pacman -S python-pipx --noconfirm
 # 4. Install gnome-extensions-cli with pipx
 pipx install gnome-extensions-cli --system-site-packages
 # 5. Install gnome shell extensions
