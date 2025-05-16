@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=gnome-autostart
+Exec=/home/k01/.config/gnome-autostart.sh
+StartupNotify=false
+Terminal=false
+Icon=conky-logomark-violet
+Categories=System;Monitor;

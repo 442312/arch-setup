@@ -1,0 +1,78 @@
+#!/bin/bash
+# 1. Install gnome
+sudo pacman -S gnome --noconfirm
+# 2. Install gnome related software
+sudo pacman -S gnome-terminal --noconfirm
+sudo pacman -S gnome-tweaks --noconfirm
+sudo pacman -S dconf-editor --noconfirm
+# 3. Install pipx
+sudo pacman -S pipx --noconfirm
+# 4. Install gnome-extensions-cli with pipx
+pipx install gnome-extensions-cli --system-site-packages
+# 5. Install gnome shell extensions
+# - Install Caffeine extension
+~/.local/bin/gext -F install 517
+# - Install Just Perfiection extension
+~/.local/bin/gext -F install 3843
+# - Install Transparent Top Bar extension
+~/.local/bin/gext -F install 3960
+# - Install Run or Rise extension
+~/.local/bin/gext -F install 1336
+# 6. Link gnome related files
+# - Create needed directories
+directories=(
+    "$HOME/.config/autostart"
+    "$HOME/.config/run-or-rise" 
+    "$HOME/.config/envoronment.d"
+    )
+
+for dir in "${directories[@]}"; do
+  if [ ! -d "$dir" ]; then
+    mkdir -p "$dir"
+  fi
+done
+# - Backup existing files
+files=(
+    "$HOME/.config/autostart/gnome-autostart.desktop" 
+    "$HOME/.config/evironment.d/envvars.conf"
+    "$HOME/.config/run-or-rise/shortcuts.conf"
+    "$HOME/.config/background"
+    "$HOME/.config/gnome-autostart.sh"  
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    cp "$file" "$file".arxbak
+  fi
+done
+# - Delete existing files
+files=(
+    "$HOME/.config/autostart/gnome-autostart.desktop" 
+    "$HOME/.config/evironment.d/envvars.conf"
+    "$HOME/.config/run-or-rise/shortcuts.conf"
+    "$HOME/.config/background"
+    "$HOME/.config/gnome-autostart.sh"  
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    rm "$file"
+  fi
+done
+# - Restore (link) gnome dotfiles
+files=(
+    "autostart/gnome-autostart.desktop" 
+    "run-or-rise/shortcuts.conf"
+    "background"
+    "gnome-autostart.sh" 
+    )
+
+for file in "${files[@]}"; do
+      ln -s "$arxdotdir/.config/arx-gnome/$file" "$HOME/.config/$file"
+done
+# - Link envvars.conf with .profile
+ln -s "$arxdotdir/.profile" "$HOME/.config/evironment.d/envvars.conf"
+# 7. Restore gsettings from dconf dump
+dconf load < $arxdotdir/.config/arx-gnome/dump.dconf
+# 8. Enable GDM
+sudo systemctl enable gdm.service

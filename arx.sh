@@ -75,29 +75,29 @@ export arxdotdir="$(pwd)/dots"
 
 # 01. BASE
 #---------
-./scripts/01-00-pacman-settings
-./scripts/01-01-pacman-mirrors-multilib
-#./scripts/01-02-pacman-mirrors-chaotic
-./scripts/01-03-locales
-./scripts/01-04-00-create-dir-structure
-./scripts/01-04-01-bash
-./scripts/01-04-02-shell-aliases
-./scripts/01-04-03-profile
-./scripts/01-04-04-xresources
-./scripts/01-04-05-xdg-user-dirs
-./scripts/01-04-man-db
-./scripts/01-05-htop
-./scripts/01-06-inxi
-./scripts/01-07-lvm2
-./scripts/01-08-wget
-./scripts/01-09-ncdu
-./scripts/01-10-rsync
-./scripts/01-11-tree 
-./scripts/01-12-inagemagick
-./scripts/01-13-mc
-./scripts/01-14-ranger
-./scripts/01-15-archivers
-./scripts/01-16-zsh
+./modules/01-00-pacman-settings
+./modules/01-01-pacman-mirrors-multilib
+#./modules/01-02-pacman-mirrors-chaotic
+./modules/01-03-locales
+./modules/01-04-00-create-dir-structure
+./modules/01-04-01-bash
+./modules/01-04-02-shell-aliases
+./modules/01-04-03-profile
+./modules/01-04-04-xresources
+./modules/01-04-05-xdg-user-dirs
+./modules/01-04-man-db
+./modules/01-05-htop
+./modules/01-06-inxi
+./modules/01-07-lvm2
+./modules/01-08-wget
+./modules/01-09-ncdu
+./modules/01-10-rsync
+./modules/01-11-tree 
+./modules/01-12-inagemagick
+./modules/01-13-mc
+./modules/01-14-ranger
+./modules/01-15-archivers
+./modules/01-16-zsh
 # vim
 # tmux
 # fzf
@@ -107,22 +107,22 @@ export arxdotdir="$(pwd)/dots"
 
 # 02. SYSTEM SERVICES
 #----------------------
-./scripts/02-00-nfs
-./scripts/02-01-wireguard
-./scripts/02-02-samba
-# ./scripts/02-03-tlp 
-./scripts/02-04-syncthing
-./scripts/02-05-ssh
+# ./modules/02-00-nfs
+# ./modules/02-01-wireguard
+# ./modules/02-02-samba
+# ./modules/02-03-tlp 
+# ./modules/02-04-syncthing
+# ./modules/02-05-ssh
 
 # 03. WM
 #---------------------
-./scripts/03-00-xorg
-./scripts/03-01-power-management
-./scripts/03-02-polkit
-./scripts/03-03-audio
-./scripts/03-04-rofi
-./scripts/03-05-sxhkd
-./scripts/03-06-conky
+# ./modules/03-00-xorg
+# ./modules/03-01-power-management
+# ./modules/03-02-polkit
+# ./modules/03-03-audio
+# ./modules/03-04-rofi
+# ./modules/03-05-sxhkd
+./modules/03-06-conky
 # qtile
 # picom
 # nitrogen
@@ -133,7 +133,7 @@ export arxdotdir="$(pwd)/dots"
 
 # 04. DE
 #----------------------
-# gnome
+./modules/04-00-gnome
 # kde
 
 # 05. APPS
