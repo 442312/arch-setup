@@ -3,7 +3,7 @@
 # 1. Backup existing pacman.conf
 # if it wasn't done earlier
 #-------------------------------
-if [  -f /etc/pacman.conf && ! -f /etc/pacman.conf.arxbak ]; then
+if [[  -f /etc/pacman.conf && ! -f /etc/pacman.conf.arxbak ]]; then
     sudo cp /etc/pacman.conf /etc/pacman.conf.arxbak
 fi 
 
