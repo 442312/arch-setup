@@ -85,18 +85,18 @@ export arxdotdir="$(pwd)/dots"
 ./modules/01-04-03-profile
 ./modules/01-04-04-xresources
 ./modules/01-04-05-xdg-user-dirs
-./modules/01-04-man-db
-./modules/01-05-htop
-./modules/01-06-inxi
-./modules/01-07-lvm2
-./modules/01-08-wget
-./modules/01-09-ncdu
-./modules/01-10-rsync
-./modules/01-11-tree 
-./modules/01-12-inagemagick
-./modules/01-13-mc
-./modules/01-14-ranger
-./modules/01-15-archivers
+# ./modules/01-04-man-db
+# ./modules/01-05-htop
+# ./modules/01-06-inxi
+# ./modules/01-07-lvm2
+# ./modules/01-08-wget
+# ./modules/01-09-ncdu
+# ./modules/01-10-rsync
+# ./modules/01-11-tree 
+# ./modules/01-12-inagemagick
+# ./modules/01-13-mc
+# ./modules/01-14-ranger
+# ./modules/01-15-archivers
 ./modules/01-16-zsh
 # vim
 # tmux
@@ -139,10 +139,10 @@ export arxdotdir="$(pwd)/dots"
 # 05. APPS
 #----------------------
 # ./modules/05-00-digikam
-./modules/05-01-keepassxc
-./modules/05-02-mpv
-./modules/05-03-viewnior
-./modules/05-04-chromium
+# ./modules/05-01-keepassxc
+# ./modules/05-02-mpv
+# ./modules/05-03-viewnior
+# ./modules/05-04-chromium
 # ./modules/05-05-firefox
 # ./modules/05-06-obsidian
 # ./modules/05-07-doublecmd
@@ -152,11 +152,11 @@ export arxdotdir="$(pwd)/dots"
 # ./modules/05-11-inkscape
 # ./modules/05-12-homebank
 # ./modules/05-13-calibre
-./modules/05-14-telegram
-./modules/05-15-vinagre
+# ./modules/05-14-telegram
+# ./modules/05-15-vinagre
 # ./modules/05-16-baobab
 # ./modules/05-17-wine
-./modules/05-18-kitty
+# ./modules/05-18-kitty
 
 # color chooser
 # pdf
@@ -173,11 +173,11 @@ export arxdotdir="$(pwd)/dots"
 # ./modules/06-00-flatpak
 # ./modules/06-01-flatpak-freeplane
 # ./modules/06-02-flatpak-vscode
-./modules/06-03-flatpak-gnome-extension-manager
+# ./modules/06-03-flatpak-gnome-extension-manager
 
 # 07. APEARANCE
 #-----------------------
-./modules/07-00-fonts
+# ./modules/07-00-fonts
 # ./modules/07-01-icons
 
 # 08. AUR
