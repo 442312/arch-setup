@@ -138,24 +138,24 @@ export arxdotdir="$(pwd)/dots"
 
 # 05. APPS
 #----------------------
-./modules/05-00-digikam
+# ./modules/05-00-digikam
 ./modules/05-01-keepassxc
 ./modules/05-02-mpv
 ./modules/05-03-viewnior
 ./modules/05-04-chromium
-./modules/05-05-firefox
-./modules/05-06-obsidian
-./modules/05-07-doublecmd
-./modules/05-08-libreoffice
-./modules/05-09-darktable
-./modules/05-10-gimp
-./modules/05-11-inkscape
-./modules/05-12-homebank
-./modules/05-13-calibre
+# ./modules/05-05-firefox
+# ./modules/05-06-obsidian
+# ./modules/05-07-doublecmd
+# ./modules/05-08-libreoffice
+# ./modules/05-09-darktable
+# ./modules/05-10-gimp
+# ./modules/05-11-inkscape
+# ./modules/05-12-homebank
+# ./modules/05-13-calibre
 ./modules/05-14-telegram
 ./modules/05-15-vinagre
-./modules/05-16-baobab
-./modules/05-17-wine
+# ./modules/05-16-baobab
+# ./modules/05-17-wine
 ./modules/05-18-kitty
 
 # color chooser
@@ -170,15 +170,15 @@ export arxdotdir="$(pwd)/dots"
 
 # 06. FLATPAK
 #------------------------
-./modules/06-00-flatpak
-./modules/06-01-flatpak-freeplane
-./modules/06-02-flatpak-vscode
+# ./modules/06-00-flatpak
+# ./modules/06-01-flatpak-freeplane
+# ./modules/06-02-flatpak-vscode
 ./modules/06-03-flatpak-gnome-extension-manager
 
 # 07. APEARANCE
 #-----------------------
 ./modules/07-00-fonts
-./modules/07-01-icons
+# ./modules/07-01-icons
 
 # 08. AUR
 #------------------------
