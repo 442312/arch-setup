@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# 1. Install Gnome Extension Mananger
+#------------------------------------
+flatpak install -y flathub com.mattjakeman.ExtensionManager

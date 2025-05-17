@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# 1. Install VsCode
+#------------------
+flatpak install -y flathub com.visualstudio.code

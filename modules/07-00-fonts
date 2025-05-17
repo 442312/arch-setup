@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo pacman -S ttf-dejavu --noconfirm
+sudo pacman -S ttf-bigblueterminal-nerd --noconfirm
+sudo pacman -S ttf-hack --noconfirm
+sudo pacman -S ttf-ibm-plex --noconfirm
+sudo pacman -S ttf-jetbrains-mono-nerd --noconfirm
+sudo pacman -S ttf-liberation --noconfirm
+sudo pacman -S ttf-martian-mono-nerd --noconfirm
+sudo pacman -S ttf-sourcecodepro-nerd --noconfirm

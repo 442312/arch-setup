@@ -170,22 +170,22 @@ export arxdotdir="$(pwd)/dots"
 
 # 06. FLATPAK
 #------------------------
-# flatpak
-# freeplane flatpak
-# vscode flatpak
-# gnome extension manager flatpak
+./modules/06-00-flatpak
+./modules/06-01-flatpak-freeplane
+./modules/06-02-flatpak-vscode
+./modules/06-03-flatpak-gnome-extension-manager
 
-# 07. AUR
+# 07. APEARANCE
+#-----------------------
+./modules/07-00-fonts
+./modules/07-01-icons
+
+# 08. AUR
 #------------------------
 # yay
 # light
 # jumpapp
 # xidlehook
-
-# 08. APEARANCE
-#-----------------------
-# fonts
-# papirus-icons
 
 # 09. END
 # remove backup files arxbak
