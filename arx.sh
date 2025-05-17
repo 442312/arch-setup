@@ -138,40 +138,42 @@ export arxdotdir="$(pwd)/dots"
 
 # 05. APPS
 #----------------------
-# digikam
+./modules/05-00-digikam
+./modules/05-01-keepassxc
+./modules/05-02-mpv
+./modules/05-03-viewnior
+./modules/05-04-chromium
+./modules/05-05-firefox
+./modules/05-06-obsidian
+./modules/05-07-doublecmd
+./modules/05-08-libreoffice
+./modules/05-09-darktable
+./modules/05-10-gimp
+./modules/05-11-inkscape
+./modules/05-12-homebank
+./modules/05-13-calibre
+./modules/05-14-telegram
+./modules/05-15-vinagre
+./modules/05-16-baobab
+./modules/05-17-wine
+./modules/05-18-kitty
+
 # color chooser
-# keepassxc
-# mpv
-# viewnior
-# chromium
-# firefox
 # pdf
 # rapid photo downloader
 # qutebrowser
 # qbittorrent
-# obsidian
-# doublecommander
-# libreoffice
-# darktable
-# gimp
-# inkscape
 # blender
 # freecad
-# homebank
-# calibre
-# telegram
-# vinagre
-# baobab
 # virt-manager libvirt
-# wine
 # local/share/applications
-# kitty
 
 # 06. FLATPAK
 #------------------------
 # flatpak
 # freeplane flatpak
 # vscode flatpak
+# gnome extension manager flatpak
 
 # 07. AUR
 #------------------------

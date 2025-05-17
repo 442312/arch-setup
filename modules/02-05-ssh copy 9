@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sudo pacman -S openssh --noconfirm
-sudo systemctl enable --now sshd.service

@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# 1. Install mpv
+sudo pacman -S mpv --noconfirm
+
+# 2. Create needed directories
+#-----------------------------
+directories=(
+    "$HOME/.config/mpv"
+    "$HOME/.config/mpv/scripts"
+    "$HOME/.config/mpv/script-opts"
+    )
+
+for dir in "${directories[@]}"; do
+  if [ ! -d "$dir" ]; then
+    mkdir -p "$dir"
+  fi
+done
+
+# 3. Backup existing mpv config
+#------------------------------
+files=(
+    "$HOME/.config/mpv/mpv.conf"
+    "$HOME/.config/mpv/input.conf"
+    "$HOME/.config/mpv/scripts/autoload.lua"
+    "$HOME/.config/mpv/scripts/recent.lua"
+    "$HOME/.config/mpv/script-opts/recent.conf" 
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    cp "$file" "$file".arxbak
+  fi
+done
+
+# 4. Remove existing mpv config
+#------------------------------
+files=(
+    "$HOME/.config/mpv/mpv.conf"
+    "$HOME/.config/mpv/input.conf"
+    "$HOME/.config/mpv/scripts/autoload.lua"
+    "$HOME/.config/mpv/scripts/recent.lua"
+    "$HOME/.config/mpv/script-opts/recent.conf" 
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    rm "$file"
+  fi
+done
+
+# 5. Restore (link) mpv config files from dofiles
+#------------------------------------------------
+files=(
+    ".config/mpv/mpv.conf"
+    ".config/mpv/input.conf"
+    ".config/mpv/scripts/autoload.lua"
+    ".config/mpv/scripts/recent.lua"
+    ".config/mpv/script-opts/recent.conf"
+    )
+
+for file in "${files[@]}"; do
+      ln -s "$arxdotdir/$file" "$HOME/$file"
+done

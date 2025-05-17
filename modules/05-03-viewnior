@@ -1,0 +1,51 @@
+#!/bin/bash
+
+
+# 1. Install viewnior
+#-----------------------------
+sudo pacman -S viewnior --noconfirm
+
+# 2. Create needed directories
+#-----------------------------
+  if [ ! -d "$HOME/.config/viewnior" ]; then
+    mkdir -p "$HOME/.config/viewnior"
+  fi
+
+
+# 3. Backup existing viewnior config
+#------------------------------
+files=(
+    "$HOME/.config/viewnior/viewnior.conf"
+    "$HOME/.config/viewnior/accel_map"
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    cp "$file" "$file".arxbak
+  fi
+done
+
+# 4. Remove existing viewnior config
+#------------------------------
+files=(
+    "$HOME/.config/viewnior/viewnior.conf"
+    "$HOME/.config/viewnior/input.conf"
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    rm "$file"
+  fi
+done
+
+# 5. Restore (link) viewnior config files from dofiles
+#------------------------------------------------
+files=(
+    ".config/viewnior/viewnior.conf"
+    ".config/viewnior/accel_map"
+    )
+
+for file in "${files[@]}"; do
+      ln -s "$arxdotdir/$file" "$HOME/$file"
+done
+

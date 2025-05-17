@@ -1,4 +1,14 @@
 #!/bin/bash
+
+# 1. Backup existing pacman.conf
+# if it wasn't done earlier
+#-------------------------------
+if [  -f /etc/pacman.conf && ! -f /etc/pacman.conf.arxbak ]; then
+    sudo cp /etc/pacman.conf /etc/pacman.conf.arxbak
+fi 
+
+# 2. Append chaotic-aur repository
+#---------------------------------
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'

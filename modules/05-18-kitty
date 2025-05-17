@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# 1. Install kitty
+#-----------------------------
+sudo pacman -S kitty --noconfirm
+
+# 2. Create needed directories
+#-----------------------------
+  if [ ! -d "$HOME/.config/kitty" ]; then
+    mkdir -p "$HOME/.config/kitty"
+  fi
+
+
+# 3. Backup existing kitty config
+#------------------------------
+files=(
+    "$HOME/.config/kitty/kitty.conf"
+    "$HOME/.config/kitty/current-theme.conf"
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    cp "$file" "$file".arxbak
+  fi
+done
+
+# 4. Remove existing kitty config
+#------------------------------
+files=(
+    "$HOME/.config/kitty/kitty.conf"
+    "$HOME/.config/kitty/current-theme.conf"
+    )
+
+for file in "${files[@]}"; do
+  if [  -f "$file" ]; then
+    rm "$file"
+  fi
+done
+
+# 5. Restore (link) kitty config files from dofiles
+#------------------------------------------------
+files=(
+    ".config/kitty/kitty.conf"
+    ".config/kitty/current-theme.conf""
+    )
+
+for file in "${files[@]}"; do
+      ln -s "$arxdotdir/$file" "$HOME/$file"
+done
