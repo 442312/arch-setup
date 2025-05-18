@@ -4,6 +4,7 @@ directories=(
     "$HOME/.config"
     "$HOME/.local/share" 
     "$HOME/.local/state"
+    "$HOME/.local/bin"
     )
 
 for dir in "${directories[@]}"; do

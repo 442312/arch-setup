@@ -104,6 +104,10 @@ export arxdotdir="$(pwd)/dots"
 # exa 
 # cryfs
 # neofetch
+# groups network
+# sshuttle
+# path
+# wakeonlan
 
 # 02. SYSTEM SERVICES
 #----------------------
