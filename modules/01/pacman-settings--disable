@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Restore pacman.conf if exist
+# or edit existing pacman.conf
+#-------------------------------
+if [[  -f /etc/pacman.arxbak ]]; then
+    sudo mv /etc/pacman.conf.arxbak /etc/pacman.conf
+else
+    sudo sed -i '/^#-arx-pacman-settings-begin/,/^\#-arx-pacman-settings-end/{/^#-arx-pacman-settings-begin/!{/^\#-arx-pacman-settings-end/!d}}' /etc/pacman.conf
+    sudo sed -i '/#-arx-pacman-settings-begin/d'
+    sudo sed -i '/#-arx-pacman-settings-end/d'
+fi 
+

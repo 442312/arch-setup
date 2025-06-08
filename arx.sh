@@ -75,16 +75,16 @@ export arxdotdir="$(pwd)/dots"
 
 # 01. BASE
 #---------
-./modules/01-00-pacman-settings
-./modules/01-01-pacman-mirrors-multilib
+./modules/01/pacman-settings--keep
+# ./modules/01-01-pacman-mirrors-multilib
 #./modules/01-02-pacman-mirrors-chaotic
-./modules/01-03-locales
-./modules/01-04-00-create-dir-structure
-./modules/01-04-01-bash
-./modules/01-04-02-shell-aliases
-./modules/01-04-03-profile
-./modules/01-04-04-xresources
-./modules/01-04-05-xdg-user-dirs
+# ./modules/01-03-locales
+# ./modules/01-04-00-create-dir-structure
+# ./modules/01-04-01-bash
+# ./modules/01-04-02-shell-aliases
+# ./modules/01-04-03-profile
+# ./modules/01-04-04-xresources
+# ./modules/01-04-05-xdg-user-dirs
 # ./modules/01-04-man-db
 # ./modules/01-05-htop
 # ./modules/01-06-inxi
@@ -97,12 +97,12 @@ export arxdotdir="$(pwd)/dots"
 # ./modules/01-13-mc
 # ./modules/01-14-ranger
 # ./modules/01-15-archivers
-./modules/01-16-zsh
+# ./modules/01-16-zsh
+# ./modules/01-17-cryfs
 # vim
 # tmux
 # fzf
 # exa 
-# cryfs
 # neofetch
 # groups network
 # sshuttle
@@ -126,7 +126,7 @@ export arxdotdir="$(pwd)/dots"
 # ./modules/03-03-audio
 # ./modules/03-04-rofi
 # ./modules/03-05-sxhkd
-./modules/03-06-conky
+# ./modules/03-06-conky
 # qtile
 # picom
 # nitrogen
@@ -137,7 +137,7 @@ export arxdotdir="$(pwd)/dots"
 
 # 04. DE
 #----------------------
-./modules/04-00-gnome
+# ./modules/04-00-gnome
 # kde
 
 # 05. APPS

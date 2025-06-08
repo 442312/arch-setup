@@ -1,4 +1,11 @@
 #!/bin/bash
 
-sudo pacman -S htop --noconfirm
+package=htop
 
+echo "Installing $package..."
+sudo pacman -S $package --noconfirm > /dev/null
+if [ $? -eq 0 ]; then
+  echo "OK - done!"
+else
+  echo "!!! -- $package installation error -- !!!"
+fi

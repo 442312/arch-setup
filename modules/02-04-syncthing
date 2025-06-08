@@ -1,6 +1,6 @@
 #!/bin/bash
 
 sudo pacman -S syncthing --noconfirm
-sudo systemctl enable --now syncthing@$USER.service
-sudo sh -c 'echo 204800 > /proc/sys/fs/inotify/max_user_watches'
-echo "fs.inotify.max_user_watches=204800" | sudo tee -a /etc/sysctl.conf
+# sudo systemctl enable --now syncthing@$USER.service
+# sudo sh -c 'echo 204800 > /proc/sys/fs/inotify/max_user_watches'
+# echo "fs.inotify.max_user_watches=204800" | sudo tee -a /etc/sysctl.conf

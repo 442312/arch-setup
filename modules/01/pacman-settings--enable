@@ -10,12 +10,13 @@ fi
 # 2. Append needed settings
 #--------------------------
 text="
-# Pacman configuration options
-# ADDED BY SETUP SCRIPT
+#-arx-pacman-settings-begin
 # ===============================
 [options]
 Color
+VerbosePkgLists
 ParallelDownloads = 10
 #================================
+#-arx-pacman-settings-end
 "
 echo -e " $text" | sudo tee -a /etc/pacman.conf > /dev/null
