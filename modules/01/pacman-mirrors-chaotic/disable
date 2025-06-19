@@ -14,8 +14,8 @@ sudo sed -i "/$ending/d" /etc/pacman.conf
 # Remove key
 sudo pacman-key --delete 3056513887B78AEB
 
-# Refresh keys
-sudo pacman-key --refresh-keys
+# Delete chaotic packages
+sudo pacman -Rsn chaotic-keyring chaotic-mirrorlist
 
 # Sync package database
 sudo pacman -Syuu --noconfirm
@@ -23,7 +23,7 @@ sudo pacman -Syuu --noconfirm
 # Clean package cache
 yes | sudo sudo pacman -Sc
 
-# Delete orphans
+# Delete orphans. Comment this if you whamt to keep them
 sudo acman -R $(pacman -Qtdq) --noconfirm
 
 echo -e "Pacman mirrors chaotic disabled"
