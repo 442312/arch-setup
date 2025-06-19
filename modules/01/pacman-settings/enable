@@ -7,18 +7,18 @@ if [[  -f /etc/pacman.conf && ! -f /etc/pacman.conf.arxbak ]]; then
     sudo cp /etc/pacman.conf /etc/pacman.conf.arxbak
 fi 
 
-# 2. Append multilib repository
-#------------------------------
+# 2. Append needed settings
+#--------------------------
 text="
-#-arx-pacman-mirrors-multilib-begin
+#-arx-pacman-settings-begin
 # ===============================
-[multilib]
-Include = /etc/pacman.d/mirrorlist
+[options]
+Color
+VerbosePkgLists
+ParallelDownloads = 10
 #================================
-#-arx-pacman-mirrors-multilib-end
+#-arx-pacman-settings-end
 "
 echo -e " $text" | sudo tee -a /etc/pacman.conf > /dev/null
 
-sudo pacman -Syu --noconfirm
-
-echo -e "Pacman mirrors multilib enabled"
+echo -e "Pacman settings enabled"

@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Variables
-#----------
-begining="#-arx-pacman-settings-begin"
-ending="#-arx-pacman-settings-end"
-
 # Delete arx pacman setiings from pacman.conf
 #-------------------------------
-sudo sed -i "/^$begining/,/^$ending/{/^$begining/!{/^$ending/!d}}" /etc/pacman.conf
-sudo sed -i "/$begining/d" /etc/pacman.conf
-sudo sed -i "/$ending/d" /etc/pacman.conf
+if [[  -f /etc/pacman.arxbak ]]; then
+    sudo mv /etc/pacman.conf.arxbak /etc/pacman.conf
+else
+    sudo sed -i '/^#-arx-pacman-mirrors-multilib-begin/,/^\#-arx-pacman-mirrors-multilib-end/{/^#-arx-pacman-mirrors-multilib-begin/!{/^\#-arx-pacman-mirrors-multilib-end/!d}}' /etc/pacman.conf
+    sudo sed -i '/#-arx-pacman-mirrors-multilib-begin/d' /etc/pacman.conf
+    sudo sed -i '/#-arx-pacman-mirrors-multilib-end/d' /etc/pacman.conf
+fi 
 
-echo -e "Pacman settings disabled"
+echo -e "Pacman mirrors multilib disabled"
