@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Variables
+#----------
+begining="#-arx-pacman-mirrors-chaotic-begin"
+ending="#-arx-pacman-mirrors-chaotic-end"
+
+# Delete arx pacman mirrors chaotic from pacman.conf
+#----------------------------------------------------
+sudo sed -i "/^$begining/,/^$ending/{/^$begining/!{/^$ending/!d}}" /etc/pacman.conf
+sudo sed -i "/$begining/d" /etc/pacman.conf
+sudo sed -i "/$ending/d" /etc/pacman.conf
+
+# Remove key
+sudo pacman-key --delete 3056513887B78AEB
+
+# Refresh keys
+sudo pacman-key --refresh-keys
+
+# Sync package database
+sudo pacman -Syuu --noconfirm
+
+# Clean package cache
+yes | sudo sudo pacman -Sc
+
+# Delete orphans
+sudo acman -R $(pacman -Qtdq) --noconfirm
+
+echo -e "Pacman mirrors chaotic disabled"
