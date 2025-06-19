@@ -6,7 +6,7 @@ begining="#-arx-pacman-settings-begin"
 ending="#-arx-pacman-settings-end"
 
 # Delete arx pacman setiings from pacman.conf
-#-------------------------------
+#--------------------------------------------
 sudo sed -i "/^$begining/,/^$ending/{/^$begining/!{/^$ending/!d}}" /etc/pacman.conf
 sudo sed -i "/$begining/d" /etc/pacman.conf
 sudo sed -i "/$ending/d" /etc/pacman.conf

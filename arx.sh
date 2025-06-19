@@ -76,7 +76,7 @@ export arxdotdir="$(pwd)/dots"
 # 01. BASE
 #---------
 ./modules/01/pacman-settings/enable
-./modules/01/pacman-mirrors-multilib/keep
+./modules/01/pacman-mirrors-multilib/enable
 #./modules/01-02-pacman-mirrors-chaotic
 # ./modules/01-03-locales
 # ./modules/01-04-00-create-dir-structure
