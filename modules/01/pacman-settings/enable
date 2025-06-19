@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# 1. Backup existing pacman.conf
+# if it wasn't done earlier
+#-------------------------------
+if [[  -f /etc/pacman.conf && ! -f /etc/pacman.conf.arxbak ]]; then
+    sudo cp /etc/pacman.conf /etc/pacman.conf.arxbak
+fi 
+
+# 2. Append multilib repository
+#------------------------------
+text="
+#-arx-pacman-mirrors-multilib-begin
+# ===============================
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+#================================
+#-arx-pacman-mirrors-multilib-end
+"
+echo -e " $text" | sudo tee -a /etc/pacman.conf > /dev/null
+
+sudo pacman -Syu --noconfirm
+
+echo -e "Pacman mirrors multilib enabled"

@@ -20,3 +20,5 @@ ParallelDownloads = 10
 #-arx-pacman-settings-end
 "
 echo -e " $text" | sudo tee -a /etc/pacman.conf > /dev/null
+
+echo -e "Pacman settings enabled"
